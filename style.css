@@ -55,9 +55,9 @@ header {
 
 #carousel-ctx img {
     margin-left: 1rem;
-    object-fit: cover;
-    width: 90% !important;
-    height: 80% !important;
+    /* object-fit: cover; */
+    width: 30rem!important;
+    height: 28rem!important;
 }
 
 
@@ -126,5 +126,7 @@ header {
 }
 
 .ww-ctx img{
-    object-fit: cover;
+    width: 15rem !important;
+    height: 13rem !important;
+    /* object-fit: cover; */
 }
