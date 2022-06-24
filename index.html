@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HCI News and Updates Website</title>
+  </head>
+  <body>
+    <header style="height: 4rem; position: fixed; top: 0; z-index: 99; background-color: #f5f6ff; border-bottom: 1px solid #fcbcb5;">
+      <div class="mx-container">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <h1 style="font-size: 1.5rem; font-weight: 500;">News and Updates</h1>
+          <div class="d-flex justify-content-between hd__txt" style="font-size: 0.9rem; font-weight: 500;">
+            <a href="#topstories">Top Stories</a>
+            <a href="#latestnews">Latest News</a>
+            <a href="#updates">Latest Updates</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="container">
+
+      <!-- carousel from docs  -->
+      <div
+        id="carIndicators"
+        class="carousel slide mt-5 wwe"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carIndicators" data-slide-to="1"></li>
+          <li data-target="#carIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <!-- inner carousel child  -->
+        <div class="carousel-inner" id="carousel-ctx">
+          <div class="carousel-item active car-child">
+            <div class="d-flex h-100 align-items-center justify-content-center p-5">
+              <div>
+                <h1 style="font-weight: 500;">Six years of blood and violence: People we lost under Duterte</h1>
+                <p>President Rodrigo Duterte's rhetoric and policies make violence and a culture of impunity the norm in the Philippines</p>
+                <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+                <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+              </div>
+              <img class="d-block" src="./first.webp" alt="First slide" />
+            </div>
+          </div>
+          <div class="carousel-item car-child">
+            <div class="d-flex h-100 align-items-center justify-content-center p-5">
+              <div>
+                <h1 style="font-weight: 500;">Six years of blood and violence: People we lost under Duterte</h1>
+                <p>President Rodrigo Duterte's rhetoric and policies make violence and a culture of impunity the norm in the Philippines</p>
+                <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+                <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+              </div>
+              <img class="d-block" src="./first.webp" alt="First slide" />
+            </div>
+          </div>
+          <div class="carousel-item car-child">
+            <div class="d-flex h-100 align-items-center justify-content-center p-5">
+              <div>
+                <h1 style="font-weight: 500;">Six years of blood and violence: People we lost under Duterte</h1>
+                <p>President Rodrigo Duterte's rhetoric and policies make violence and a culture of impunity the norm in the Philippines</p>
+                <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+                <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+              </div>
+              <img class="d-block" src="./first.webp" alt="First slide" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- prev next btn  -->
+      <a
+      class="carousel-control-prev"
+      href="#carIndicators"
+      role="button"
+      data-slide="prev"
+      >
+      &lt;
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carIndicators"
+        role="button"
+        data-slide="next"
+      >
+      &gt; 
+      </a>
+
+    </main>
+
+
+    <!-- top stories  -->
+
+    <section id="topstories" class="container mt-5">
+
+      <h1 style="font-size: 2.5rem; font-weight: 600;" class="m-5">Top Stories</h1>
+
+      <!-- first top  -->
+
+      <div class="row w-100 justify-content-center ">
+        <div class="d-flex top__ctx p-1 mr-5">
+          <div>
+            <h1>Philippine Stock Exchange bids farewell to trading floor, migrates to digital</h1>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <img class="w-25" src="./justguy.webp" alt="luffy">
+        </div>
+        <div class="d-flex top__ctx p-1">
+          <div>
+            <h1>Filipino honored for role in East Timor’s independence struggle recalls close calls</h1>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <img class="w-25" src="./justguy.webp" alt="luffy">
+        </div>
+      </div>
+      
+      <!-- second top  -->
+      <div class="row w-100 justify-content-center mt-5">
+        <div class="d-flex top__ctx p-1 mr-5">
+          <div>
+            <h1>LOONA’s agency threatens legal action as rumors of Chuu’s departure spread</h1>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <img class="w-25" src="./justguy.webp" alt="luffy">
+        </div>
+        <div class="d-flex top__ctx p-1">
+          <div>
+            <h1>Family and friends remember ‘simple, decent’ Noynoy Aquino who served without fanfare</h1>
+            <span>3 HOURS AGO</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <img class="w-25" src="./justguy.webp" alt="luffy">
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <!-- latest news  -->
+
+    <div id="latestnews" class="container mt-5">
+
+      <h1 style="font-size: 2.5rem; font-weight: 600;" class="m-5">Latest News</h1>
+
+      <!-- first top  -->
+
+      <div class="row w-100 justify-content-center">
+        <div class="d-flex h-100 align-items-center justify-content-center p-5">
+          <div>
+            <h1 style="font-weight: 500;">China’s envoy calls on new Australian government to repair bilateral ties</h1>
+            <p>Australian Prime Minister Anthony Albanese, who took office in May, has said China needs to lift its sanctions on Australian products to improve relations</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <img class="d-block" src="./justguy.webp" alt="First slide" />
+        </div>
+      </div>
+
+      <!-- 1  -->
+
+      <div class="ww-ctx mt-5">
+        <div class="d-flex align-items-center">
+          <div >
+            <h1>HAAAAAAAAHHAHAHHAHHAH</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ab expedita! Quidem, soluta corrupti.</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
+              <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-share"></i>
+              </div>
+          </div>
+          <img src="./justguy.webp" class="w-25" alt="www">
+        </div>
+      </div>
+
+      <!-- 2  -->
+
+      <div class="ww-ctx mt-5">
+        <div class="d-flex align-items-center">
+          <img src="./justguy.webp" class="w-25 mr-3" alt="www">
+          <div >
+            <h1>HAAAAAAAAHHAHAHHAHHAH</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ab expedita! Quidem, soluta corrupti.</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
+              <div class="text-right mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-share"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 3  -->
+
+      <div class="ww-ctx mt-5">
+        <div class="d-flex align-items-center">
+          <div >
+            <h1>HAAAAAAAAHHAHAHHAHHAH</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ab expedita! Quidem, soluta corrupti.</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
+              <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-share"></i>
+              </div>
+          </div>
+          <img src="./justguy.webp" class="w-25" alt="www">
+        </div>
+      </div>
+
+      <!-- 4  -->
+
+      <div class="ww-ctx mt-5">
+        <div class="d-flex align-items-center">
+          <img src="./justguy.webp" class="w-25 mr-3" alt="www">
+          <div >
+            <h1>HAAAAAAAAHHAHAHHAHHAH</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ab expedita! Quidem, soluta corrupti.</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
+              <div class="text-right mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-share"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- news updates  -->
+
+  <div id="updates" class="container mt-5">
+
+    <h1 style="font-size: 2.5rem; font-weight: 600;" class="m-5">Latest Updates</h1>
+
+    <!-- first top  -->
+    <div class="row w-100 justify-content-center ">
+      <div class="d-flex top__ctx p-1 mr-5 justify-content-center">
+        <div>
+          <h1>Update 1</h1>
+          <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
+          </div>
+        </div>
+        <img class="w-25" src="./newsupdates.png" alt="luffy">
+      </div>
+      <div class="d-flex top__ctx p-1 justify-content-center">
+        <div>
+          <h1>Update 2</h1>
+          <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
+          </div>
+        </div>
+        <img class="w-25" src="./newsupdates.png" alt="luffy">
+      </div>
+    </div>
+    
+    <!-- second top  -->
+    <div class="row w-100 justify-content-center mt-5">
+      <div class="d-flex top__ctx p-1 mr-5 justify-content-center">
+        <div>
+          <h1>Update 3</h1>
+          <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
+          </div>
+        </div>
+        <img class="w-25" src="./newsupdates.png" alt="luffy">
+      </div>
+      <div class="d-flex top__ctx p-1 justify-content-center">
+        <div>
+          <h1>Update 4</h1>
+          <span>3 HOURS AGO</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
+          </div>
+        </div>
+        <img class="w-25" src="./newsupdates.png" alt="luffy">
+      </div>
+    </div>
+
+  </div>
+
+
+    <footer class="container-fluid bg-dark text-white text-center mt-5">
+
+      <!-- brands logo  -->
+      <div style="font-size: 2rem;">
+        <div class="d-flex justify-content-center">
+          <div class="p-2">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="p-2">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="p-2">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="p-2">
+            <i class="fa-solid fa-share"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="p-2">
+          <p>© 2020 HCI News and Updates</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- script for bootstrap @docs  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

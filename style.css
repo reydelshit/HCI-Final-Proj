@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+:root {
+    --text-color: #575d75;
+    --important-color: #f04f3c;
+    --bg: #f5f6ff;
+    --not-impo: #575d75;
+}
+
+h1 {
+    color: var(--important-color) !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--bg) !important;
+}
+
+header {
+    display: block;
+    width: 100%;
+    /* border: 1px solid orange; */
+}
+
+.hd__txt {
+    width: 35% !important;
+}
+
+.hd__txt a {
+    text-decoration: none !important;
+    color: var(--text-color);
+}
+
+.hd__txt a:hover {
+    color: var(--important-color);
+}
+
+.mx-container {
+    padding: 0 3rem;
+    width: 100%;
+    /* background: orange; */
+}
+
+
+#carousel-ctx img {
+    width: 90% !important;
+    height: 80% !important;
+}
+
+
+
+#carousel-ctx .car-child {
+    width: 70rem;
+    height: 40rem;
+    /* border: 1px solid pink; */
+}
+
+#carousel-ctx .car-child img {
+    width: 100%;
+}
+
+.top__ctx {
+    width: 30rem !important;
+}
+
+.top__ctx h1 {
+    font-size: 1.5rem;
+    font-weight: 600 !important;
+}
+
+.top__ctx img {
+    width: 12rem !important;
+    height: 10rem !important;
+}
+
+.iconss>* {
+    margin-right: 0.2rem;
+}
+
+.ln__ctx {
+    width: 100%;
+    height: 25rem;
+    display: grid;
+    place-items: center;
+}
+
+
+.ln__ctx img {
+    width: 30rem !important;
+    height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--important-color) !important;
+}
+
+.ww-ctx {
+    width: 100%;
+    height: 100%;
+    padding: 0 7rem;
+}
