@@ -13,6 +13,10 @@ h1 {
     cursor: pointer;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 * {
     margin: 0;
@@ -129,4 +133,8 @@ header {
     width: 15rem !important;
     height: 13rem !important;
     /* object-fit: cover; */
+}
+
+.justguy{
+    width: 25rem !important;
 }
