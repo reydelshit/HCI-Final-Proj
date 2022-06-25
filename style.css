@@ -8,16 +8,6 @@
     --not-impo: #575d75;
 }
 
-h1 {
-    color: var(--important-color) !important;
-    cursor: pointer;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -25,11 +15,33 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     display: grid;
     place-items: center;
     background-color: var(--bg) !important;
 }
+
+h1 {
+    color: var(--important-color) !important;
+    cursor: pointer;
+}
+
+h2{
+    color: var(--text-color) !important;
+    cursor: pointer;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+h2:hover{
+    color: var(--important-color) !important;
+
+}
+
 
 header {
     display: block;
@@ -80,10 +92,10 @@ header {
     width: 30rem !important;
 }
 
-.top__ctx h1 {
+/* .top__ctx h1 {
     font-size: 1.5rem;
     font-weight: 600 !important;
-}
+} */
 
 .top__ctx img {
     width: 12rem !important;
