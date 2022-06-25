@@ -2,10 +2,32 @@
 
 
 :root {
-    --text-color: #575d75;
+
+    /* main text color  */
+    /* --text-color: #575d75; */
+    --text-color: #BDBDBD;
+
+
+    /* important text color  */
     --important-color: #f04f3c;
-    --bg: #f5f6ff;
+
+    /* main background color  */
+    /* --light-bg: #f5f6ff; */
+    --bg: #171C30;
+
+
+    /* default text color  */
     --not-impo: #575d75;
+
+    --border-bot: #c3c4c7;
+}
+
+i:hover{
+    color: var(--text-color) !important;
+}
+
+p{
+    color: var(--text-color) !important;
 }
 
 * {
@@ -13,6 +35,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+.swichtheme{
+    --bg: #f5f6ff !important;
+    --text-color: #575d75 !important;
+    --not-impo: var(--border-bot) !important;
+
 }
 
 html{
@@ -46,8 +75,32 @@ h2:hover{
 header {
     display: block;
     width: 100%;
-    /* border: 1px solid orange; */
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--not-impo);
 }
+
+.togglebtn{
+    background: none;
+    border: none !important;
+    cursor: pointer;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    outline: none;
+    overflow: hidden;
+
+}
+.togglebtn i{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+}
+
+.togglebtn i:hover{
+    color: var(--important-color) !important;
+}
+
 
 .hd__txt {
     width: 35% !important;
@@ -91,11 +144,6 @@ header {
 .top__ctx {
     width: 30rem !important;
 }
-
-/* .top__ctx h1 {
-    font-size: 1.5rem;
-    font-weight: 600 !important;
-} */
 
 .top__ctx img {
     width: 12rem !important;
@@ -145,8 +193,4 @@ header {
     width: 15rem !important;
     height: 13rem !important;
     /* object-fit: cover; */
-}
-
-.justguy{
-    width: 25rem !important;
 }

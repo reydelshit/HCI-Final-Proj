@@ -11,11 +11,12 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <script defer src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HCI News and Updates Website</title>
   </head>
   <body>
-    <header style="height: 4rem; position: fixed; top: 0; z-index: 99; background-color: #f5f6ff; border-bottom: 1px solid #fcbcb5;">
+    <header style="height: 4rem; position: fixed; top: 0; z-index: 99;">
       <div class="mx-container">
         <div class="d-flex justify-content-between align-items-center mt-3">
           <h1 style="font-size: 1.5rem; font-weight: 500;">News and Updates</h1>
@@ -23,6 +24,7 @@
             <a href="#topstories">Top Stories</a>
             <a href="#latestnews">Latest News</a>
             <a href="#updates">Latest Updates</a>
+            <button class="togglebtn"><i class="fa-solid fa-sun" id="sunIcon"></i></button>
           </div>
         </div>
       </div>
@@ -213,7 +215,7 @@
               <i class="fa-solid fa-share"></i>
             </div>
           </div>
-          <img class="d-block justguy" src="./assets/justguy.webp" alt="First slide" />
+          <img class="d-block" style="width: 25rem !important;" src="./assets/justguy.webp" alt="First slide" />
         </div>
       </div>
 
@@ -364,21 +366,21 @@
   </div>
 
 
-    <footer class="container-fluid bg-dark text-white text-center mt-5">
+    <footer class="container-fluid text-white text-center mt-5" style="border-top: 1px solid #575d75;">
 
       <!-- brands logo  -->
-      <div style="font-size: 2rem;">
+      <div class="mt-4" style="font-size: 2rem;">
         <div class="d-flex justify-content-center">
-          <div class="p-2">
+          <div class="p-2" style="color:#f04f3c; font-size: 1.5rem;">
             <i class="fa-brands fa-facebook"></i>
           </div>
-          <div class="p-2">
+          <div class="p-2" style="color:#f04f3c; font-size: 1.5rem">
             <i class="fa-brands fa-twitter"></i>
           </div>
-          <div class="p-2">
+          <div class="p-2" style="color:#f04f3c; font-size: 1.5rem">
             <i class="fa-brands fa-instagram"></i>
           </div>
-          <div class="p-2">
+          <div class="p-2" style="color:#f04f3c; font-size: 1.5rem">
             <i class="fa-solid fa-share"></i>
           </div>
         </div>
