@@ -41,8 +41,8 @@ p{
     --bg: #f5f6ff !important;
     --text-color: #575d75 !important;
     --not-impo: var(--border-bot) !important;
-
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -73,8 +73,6 @@ h2:hover{
 
 
 header {
-    display: block;
-    width: 100%;
     background-color: var(--bg);
     border-bottom: 1px solid var(--not-impo);
 }
@@ -118,13 +116,11 @@ header {
 .mx-container {
     padding: 0 3rem;
     width: 100%;
-    /* background: orange; */
 }
 
 
 #carousel-ctx img {
     margin-left: 1rem;
-    /* object-fit: cover; */
     width: 30rem!important;
     height: 28rem!important;
 }
@@ -134,7 +130,6 @@ header {
 #carousel-ctx .car-child {
     width: 70rem;
     height: 40rem;
-    /* border: 1px solid pink; */
 }
 
 #carousel-ctx .car-child img {
@@ -192,5 +187,4 @@ header {
 .ww-ctx img{
     width: 15rem !important;
     height: 13rem !important;
-    /* object-fit: cover; */
 }
