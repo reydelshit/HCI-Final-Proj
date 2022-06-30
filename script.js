@@ -4,9 +4,6 @@ const defaultIcon = document.querySelector('#sunIcon');
 
 const logo = document.querySelector('#logo_img');
 
-// if(defaultIcon.classList.contains('fa-sun')){
-//     logo.src = "./logo2.png";
-// }
 
 button.addEventListener('click', () => {
     document.body.classList.toggle('swichtheme');
