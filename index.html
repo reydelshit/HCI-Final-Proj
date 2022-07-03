@@ -4,24 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./logo3.png" type="image/x-icon">
-    <link
+
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
-    />
+    /> -->
+
+    <link rel="stylesheet" href="./style.css" />
+
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+
+    <!-- javascript  -->
     <script defer src="./script.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- fontawesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <!-- title  -->
     <title>HCI News and Updates Website</title>
   </head>
-  <body>
+
+
+<body>
+
+    <!-- main header  -->
+
     <header style="width: 100%; height: 7rem; position: fixed; top: 0; z-index: 99; display: flex; align-items: center;">
       <div class="mx-container" style="width: 100%; padding: 0 3rem;">
         <div class="d-flex justify-content-between align-items-center mt-3">
           <img src="./logo3.png" id="logo_img" style="margin-left: 5rem; object-fit: contain; width: 10rem; height: 10rem; margin-top: -1rem;" alt="logo">
-          <div class="d-flex justify-content-between hd__txt" style="font-size: 0.9rem; font-weight: 500;">
+          <div class="d-flex justify-content-between hd__txt" style="font-size: 0.9rem; font-weight: 500; width: 35% !important;">
             <a href="index.html">Home</a>
             <a href="#topstories">Top Stories</a>
             <a href="#news">News</a>
@@ -33,175 +58,162 @@
     </header>
 
 
-<main class="container" style="margin-top: 8rem !important;" >
 
-      <!-- carousel from docs  -->
-      <div
-        id="carIndicators"
-        class="carousel slide mt-5 wwe"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carIndicators" data-slide-to="1"></li>
-          <li data-target="#carIndicators" data-slide-to="2"></li>
-        </ol>
+<main class="container" style="margin-top: 8rem !important; height: 850px;" >
 
-        <!-- inner carousel child  -->
-        <div class="carousel-inner" id="carousel-ctx">
-          <div class="carousel-item active car-child">
-            <div class="d-flex h-100 align-items-center justify-content-center p-5">
-              <div>
-                <h1 style="font-weight: 500;">Six years of blood and violence: People we lost under Duterte</h1>
-                <p>President Rodrigo Duterte's rhetoric and policies make violence and a culture of impunity the norm in the Philippines</p>
-                <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
-                <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-solid fa-share"></i>
-                </div>
-              </div>
-              <img class="d-block" src="./assets/first.webp" alt="First slide" />
+  <!-- carousel  -->
+  <div id="car-indicator" class="carousel slide d-flex align-items-center justify-content-center" data-bs-ride="true">
+    <div class="carousel-inner" id="carousel-ctx" style="margin-bottom: 2rem !important; width: 70rem !important;"> 
+      <div class="carousel-item active car-child">
+        <div class="d-flex h-100 align-items-center justify-content-center p-5">
+          <div>
+            <h1 style="font-weight: 500;">Six years of blood and violence: People we lost under Duterte</h1>
+            <p>President Rodrigo Duterte's rhetoric and policies make violence and a culture of impunity the norm in the Philippines</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
             </div>
           </div>
-          <div class="carousel-item car-child">
-            <div class="d-flex h-100 align-items-center justify-content-center p-5">
-              <div>
-                <h1 style="font-weight: 500;">Kai Sotto goes undrafted in 2022 NBA Draft</h1>
-                <p>No NBA team took a chance on drafting the 7-foot-3 center as his name was not called by Commissioner Adam Silver and his deputy, Mark Tatum, after 58 picks.</p>
-                <span style="display:block; font-size: 0.8rem; color: #575d75;">9 hours ago</span>
-                <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-solid fa-share"></i>
-                </div>
-              </div>
-              <img class="d-block" src="./assets/kai.jpg" alt="First slide" />
-            </div>
-          </div>
-          <div class="carousel-item car-child">
-            <div class="d-flex h-100 align-items-center justify-content-center p-5">
-              <div>
-                <h1 style="font-weight: 500;">Philippine Stock Exchange bids farewell to trading floor, migrates to digital</h1>
-                <p>Starting next week, traders will conduct activities off-site instead of their trading booths, embracing the remote setup brought about by the coronavirus pandemic.</p>
-                <span style="display:block; font-size: 0.8rem; color: #575d75;">10 hours ago</span>
-                <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-solid fa-share"></i>
-                </div>
-              </div>
-              <img class="d-block" src="./assets/stock.webp" alt="First slide" />
-            </div>
-          </div>
+          <img src="./assets/first.webp" class="d-block w-100" alt="...">
         </div>
       </div>
+      <div class="carousel-item car-child">
+        <div class="d-flex h-100 align-items-center justify-content-center p-5">
+          <div>
+            <h1 style="font-weight: 500;">Six years of blood and violence: People we lost under Duterte</h1>
+            <p>President Rodrigo Duterte's rhetoric and policies make violence and a culture of impunity the norm in the Philippines</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <img src="./assets/first.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item car-child">
+        <div class="d-flex h-100 align-items-center justify-content-center p-5">
+          <div>
+            <h1 style="font-weight: 500;">Six years of blood and violence: People we lost under Duterte</h1>
+            <p>President Rodrigo Duterte's rhetoric and policies make violence and a culture of impunity the norm in the Philippines</p>
+            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <img src="./assets/first.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
 
-      <!-- prev next btn  -->
-      <a
-      class="carousel-control-prev"
-      href="#carIndicators"
-      role="button"
-      data-slide="prev"
-      >
-      &lt;
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carIndicators"
-        role="button"
-        data-slide="next"
-      >
-      &gt; 
-      </a>
+    <!-- indicator  -->
 
+    <div class="carousel-indicators" style="margin-top: -5rem !important;">
+      <button type="button" data-bs-target="#car-indicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#car-indicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#car-indicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+
+
+  <!-- next and back button  -->
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#car-indicator" data-bs-slide="prev">
+    <span aria-hidden="true" style="color: #f04f3c !important; font-size: 3rem;">&lt;</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#car-indicator" data-bs-slide="next">
+    <span aria-hidden="true" style="color: #f04f3c !important; font-size: 3rem;"> &gt;</span>
+  </button>
+      
 </main>
 
 
     <!-- top stories  -->
 
-    <section id="topstories" class="container mt-5" style="display: flex; flex-direction: column; justify-content: center; height: 700px;">
-      <h1 style="font-size: 2.5rem; font-weight: 600;" class="mb-5 mt-5">Top Stories</h1>
-
-      <!-- first top  -->
-      <div class="row w-100 justify-content-center ">
-        <div class="d-flex top__ctx p-1 mr-2">
-          <div>
+    <div id="topstories" class="d-flex flex-column justify-content-between" style="width: 75%;">
+      <h1 style="margin-bottom: 2rem;">TOP STORIES</h1>
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem; ">
+          <div style="margin-right: 1rem;">
             <h2>Charlie Puth’s collaboration with BTS’ Jung Kook hits millions of streams within hours</h2>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
-            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <span style="color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-solid fa-share"></i>
             </div>
           </div>
-          <img class="w-25" src="./assets/charlie.webp" alt="charlie">
+          <div style="width: 80%; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/charlie.webp" alt="charlie">
+          </div>
         </div>
-        <div class="d-flex top__ctx p-1">
-          <div>
-            <h2>Taiwan confirms first imported case of monkeypox</h2>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">2 hours ago</span>
-            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem;">
+          <div style="margin-right: 1rem;">
+            <h2>Charlie Puth’s collaboration with BTS’ Jung Kook hits millions of streams within hours</h2>
+            <span style="color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-solid fa-share"></i>
             </div>
           </div>
-          <img class="w-25" src="./assets/monkey.webp" alt="monkey">
+          <div style="width: 80%; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/charlie.webp" alt="charlie">
+          </div>
         </div>
       </div>
-      
-      <!-- second top  -->
-      <div class="row w-100 justify-content-center mt-5">
-        <div class="d-flex top__ctx p-1 mr-2">
-          <div>
-            <h2>‘Kin no Kuni Mizu no Kuni’ to get an anime movie adaptation</h2>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
-            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem; ">
+          <div style="margin-right: 1rem;">
+            <h2>Charlie Puth’s collaboration with BTS’ Jung Kook hits millions of streams within hours</h2>
+            <span style="color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-solid fa-share"></i>
             </div>
           </div>
-          <img class="w-25" src="./assets/anime.webp" alt="anime">
+          <div style="width: 80%; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/charlie.webp" alt="charlie">
+          </div>
         </div>
-        <div class="d-flex top__ctx p-1">
-          <div>
-            <h2>It’s Free Comic Book Day at Fully Booked on June 25!</h2>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 hours ago</span>
-            <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem; ">
+          <div style="margin-right: 1rem;">
+            <h2>Charlie Puth’s collaboration with BTS’ Jung Kook hits millions of streams within hours</h2>
+            <span style="color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-solid fa-share"></i>
             </div>
           </div>
-          <img class="w-25" src="./assets/comic.webp" alt="luffy">
+          <div style="width: 80%; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/charlie.webp" alt="charlie">
+          </div>
         </div>
       </div>
 
-
-    </section>
+      <div style="width: 100%; display: grid; place-items: center; margin-top: 5rem;">
+        <button style="width: 10rem; height: 3rem; background-color: #f04f3c; color: white; border: none; border-radius: 4px;">MORE STORIES</button>
+      </div>
+    </div>
 
 
     <!-- latest news  -->
 
-    <div id="news" class="container mt-5">
-
-      <h1 style="font-size: 2.5rem; font-weight: 600;" class="mb-2 mt-5">News</h1>
-
-      <!-- first top  -->
-
+    <div id="news" class="container m-5 d-flex align-items-center justify-content-center flex-column">
       <div class="row w-100 justify-content-center">
         <div class="d-flex h-100 align-items-center justify-content-center p-5">
           <div>
@@ -221,38 +233,38 @@
 
       <!-- 1  -->
 
-      <div class="ww-ctx mt-5">
-        <div class="d-flex">
-          <div>
-            <h2 style="font-size: 1.8rem !important;">Man loses USB flash drive with data on entire city's residents after night out</h2>
-            <p>The unnamed worker lost a USB flash drive containing the personal details of every resident of the city of Amagasaki, northwest of Osaka, after going for drinks....</p>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
-              <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-share"></i>
-              </div>
+      <div class="d-flex justify-content-center align-items-center p-2 mt-5" style="width: 80%; height: 15rem;">
+        <div style="margin-right: 1rem;">
+          <h2 style="font-size: 2rem !important;">Man loses USB flash drive with data on entire city's residents after night out</h2>
+          <p>The unnamed worker lost a USB flash drive containing the personal details of every resident of the city of Amagasaki, northwest of Osaka, after going for drinks....</p>
+          <span style="color: #575d75;">5 hours ago</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
           </div>
-          <img src="./assets/usb.jpg" class="w-100" alt="www">
+        </div>
+        <div style="width: 60%; height: 100%;">
+          <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/usb.jpg" alt="charlie">
         </div>
       </div>
 
       <!-- 2  -->
 
-      <div class="ww-ctx mt-5">
-        <div class="d-flex">
-          <img src="./assets/boat.jpg" class="w-100 mr-3" alt="www">
-          <div >
-            <h2 style="font-size: 1.8rem !important;">Owners of Jumbo Floating Restaurant backtrack on sinking claims as authorities investigate</h2>
-            <p>he owners of an iconic Hong Kong floating restaurant that made headlines around the world after reports emerged it had sunk at sea, appeared Thursday to walk-back earlier claims it was beyond salvageable...</p>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">30 MINS AGO</span>
-              <div class="text-right mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-share"></i>
-              </div>
+      <div class="d-flex justify-content-center align-items-center p-2 mt-5" style="width: 80%; height: 15rem;">
+        <div style="width: 60%; height: 100%; margin-right: 2rem;">
+          <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/usb.jpg" alt="charlie">
+        </div>
+        <div style="margin-right: 1rem;">
+          <h2 style="font-size: 2rem !important;">Man loses USB flash drive with data on entire city's residents after night out</h2>
+          <p>The unnamed worker lost a USB flash drive containing the personal details of every resident of the city of Amagasaki, northwest of Osaka, after going for drinks....</p>
+          <span style="color: #575d75;">5 hours ago</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
           </div>
         </div>
       </div>
@@ -260,110 +272,117 @@
 
       <!-- 3  -->
 
-      <div class="ww-ctx mt-5">
-        <div class="d-flex align-items-center">
-          <div >
-            <h2 style="font-size: 1.8rem !important;">ICC prosecutor wants to resume probe in Duterte drug war</h2>
-            <p>This means Prosecutor Khan has determined that there have been no genuine investigations by Philippine authorities. Resumption needs permission from the chamber.              .</p>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
-              <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-share"></i>
-              </div>
+      <div class="d-flex justify-content-center align-items-center p-2 mt-5" style="width: 80%; height: 15rem;">
+        <div style="margin-right: 1rem;">
+          <h2 style="font-size: 2rem !important;">Man loses USB flash drive with data on entire city's residents after night out</h2>
+          <p>The unnamed worker lost a USB flash drive containing the personal details of every resident of the city of Amagasaki, northwest of Osaka, after going for drinks....</p>
+          <span style="color: #575d75;">5 hours ago</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
           </div>
-          <img src="./assets/khan.webp" class="w-100" alt="www">
+        </div>
+        <div style="width: 60%; height: 100%;">
+          <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/usb.jpg" alt="charlie">
         </div>
       </div>
 
       <!-- 4  -->
-
-      <div class="ww-ctx mt-5">
-        <div class="d-flex align-items-center">
-          <img src="./assets/abort.webp" class="w-100 mr-3" alt="www">
-          <div >
-            <h2 style="font-size: 1.8rem !important;">US Supreme Court overturns abortion rights landmark</h2>
-            <p>The US justices held that the Roe v. Wade decision that allowed abortions performed before a fetus would be viable outside the womb was wrongly decided because the US Constitution makes no specific mention of abortion rights.</p>
-            <span style="display:block; font-size: 0.8rem; color: #575d75;">16 HOURS AGO</span>
-              <div class="text-right mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-share"></i>
-              </div>
+      <div class="d-flex justify-content-center align-items-center p-2 mt-5" style="width: 80%; height: 15rem;">
+        <div style="width: 60%; height: 100%; margin-right: 2rem;">
+          <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/usb.jpg" alt="charlie">
+        </div>
+        <div style="margin-right: 1rem;">
+          <h2 style="font-size: 2rem !important;">Man loses USB flash drive with data on entire city's residents after night out</h2>
+          <p>The unnamed worker lost a USB flash drive containing the personal details of every resident of the city of Amagasaki, northwest of Osaka, after going for drinks....</p>
+          <span style="color: #575d75;">5 hours ago</span>
+          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-share"></i>
           </div>
         </div>
       </div>
     </div>
 
-  <!-- news updates  -->
 
-  <div id="updates" style="height: 700px; display: flex; justify-content: center; flex-direction: column;" class="container mt-5">
+    <!-- news and updates container  -->
 
-    <h1 style="font-size: 2.5rem; font-weight: 600;" class="mb-5 mt-5">Updates</h1>
-
-    <!-- first top  -->
-    <div class="row w-100 justify-content-center ">
-      <div class="d-flex top__ctx p-1 mr-2 justify-content-center">
-        <div>
-          <h2>Highest daily tally since March pushes active cases to 6,068</h2>
-          <span style="display:block; font-size: 0.8rem; color: #575d75;">10 MINS AGO</span>
-          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-share"></i>
+    <div id="updates" class="d-flex flex-column justify-content-between" style="width: 75%; margin-top: 10rem;">
+      <h1 style="margin-bottom: 2rem;">LATEST UPDATES</h1>
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem; ">
+          <div style="margin-right: 1rem; width: 25rem;">
+            <h2>Highest daily tally since March pushes active cases to 6,068</h2>
+            <span style="color: #575d75;">10 MINS AGO</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <div style="width: 40% !important; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/crowded.jpg" alt="crowded">
           </div>
         </div>
-        <img class="w-25" src="./assets/crowded.jpg" alt="crowded">
-      </div>
-      <div class="d-flex top__ctx p-1 justify-content-center">
-        <div>
-          <h2>BPI announces free cash-in to GCash</h2>
-          <span style="display:block; font-size: 0.8rem; color: #575d75;">5 MINS AGO</span>
-          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-share"></i>
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem;">
+          <div style="margin-right: 1rem; width: 25rem;">
+            <h2>BPI announces free cash-in to GCash</h2>
+            <span style="color: #575d75;">5 hours ago</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <div style="width: 40%; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/gcasg.jpg" alt="gcash">
           </div>
         </div>
-        <img class="w-25" src="./assets/gcasg.jpg" alt="gcash">
       </div>
-    </div>
-    
-    <!-- second top  -->
-    <div class="row w-100 justify-content-center mt-5">
-      <div class="d-flex top__ctx p-1 mr-2 justify-content-center">
-        <div>
-          <h2>Expect weather to be hot and humid this weekend, says Pagasa</h2>
-          <span style="display:block; font-size: 0.8rem; color: #575d75;">1 HOUR AGO</span>
-          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-share"></i>
+      <div class="d-flex justify-content-between" style="width: 100%;">
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem; ">
+          <div style="margin-right: 1rem; width: 25rem;">
+            <h2>Expect weather to be hot and humid this weekend, says Pagasa</h2>
+            <span style="color: #575d75;">1 HOUR AGO</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <div style="width: 40% !important; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/weather.webp" alt="weather">
           </div>
         </div>
-        <img class="w-25" src="./assets/weather.webp" alt="weather">
-      </div>
-      <div class="d-flex top__ctx p-1 justify-content-center">
-        <div>
-          <h2>New drug rehabilitation center in Cavite now open</h2>
-          <span style="display:block; font-size: 0.8rem; color: #575d75;">25 MINS AGO</span>
-          <div class="mt-3 iconss" style="font-size: 2rem; color:#f04f3c; cursor: pointer;">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-share"></i>
+        <div class="d-flex justify-content-center align-items-center p-2" style="width: 40rem; height: 15rem;">
+          <div style="margin-right: 1rem; width: 25rem;">
+            <h2>New drug rehabilitation center in Cavite now open</h2>
+            <span style="color: #575d75;">25 MINS AGO</span>
+            <div class="mt-3 iconss" style="font-size: 1.5rem; color:#f04f3c; cursor: pointer;">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+          <div style="width: 40%; height: 100%;">
+            <img style="width: 100%; height: 100%; object-fit: cover; object-position: 2px;" src="./assets/drug.jpeg" alt="drug">
           </div>
         </div>
-        <img class="w-25" src="./assets/drug.jpeg" alt="drg">
       </div>
-    </div>
 
-  </div>
+      <div style="width: 100%; display: grid; place-items: center; margin-top: 5rem;">
+        <button style="width: 10rem; height: 3rem; background-color: #f04f3c; color: white; border: none; border-radius: 4px;">MORE UPDATES</button>
+      </div>
+    </div> 
+                    
 
 
   <!-- latest videos -->
@@ -414,26 +433,24 @@
     </footer>
 
 
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
-
-
-
-    <!-- script for bootstrap @docs  -->
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
-    ></script>
-    <script
+    ></script> -->
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"
-    ></script>
-    <script
+    ></script> -->
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </body>
 </html>
